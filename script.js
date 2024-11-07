@@ -18,15 +18,11 @@ function addtask() {
     delbtn.classList.add("fa-solid" , "fa-trash");
     delbtn.addEventListener("click", () => deltask(li));
    
-    
-    const editbtn = document.createElement("i");
-    editbtn.classList.add("fa-solid" , "fa-pencil");
-    editbtn.addEventListener("click", () => edittask(li));
+  
 
 
     ul.append(li);
     li.append(delbtn); 
-    li.append(editbtn);             
     input.value = "";            
 }
 
@@ -36,10 +32,7 @@ function deltask(list) {
 }
 
 
-function edittask(list)
-{
-  input.value = list.innerText;
-}
+
 
 
 
